@@ -7,11 +7,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../general.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Scripts -->
-    <script src="Duck.js"></script>
-    <script src="main.js"></script>
+    <script src="../Classes/Duck.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -40,9 +40,9 @@
           <label for="weight">Weight:</label>
           <input type="number" id="weight" required />
         </div>
-        <div>
-          <label for="imageUrl">A photo of Your Duck</label>
-          <input type="url" id="imageUrl" required />
+        <div class="flex-col">
+          <label for="image">A photo of Your Duck</label>
+          <input type="file" accept="image/png, image/jpeg" required />
         </div>
         <button type="submit" class="btn" id="createDuckButton">
           Create your Duck
@@ -51,11 +51,11 @@
 
       <!-- Buttons -->
       <div id="actionButtons" class="hide">
-        <div id="showButton">Show</div>
-        <div id="quackButton">Quack</div>
+        <div class="btn btn-opt" id="showButton">Show</div>
+        <div class="btn btn-opt" id="quackButton">Quack</div>
       </div>
 
-      <div class="output"></div>
+      <div id="output"></div>
     </div>
   </body>
 </html>
