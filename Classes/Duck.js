@@ -5,47 +5,60 @@ class Duck {
    * @param {string} color - The color of the duck.
    * @param {number} age - The age of the duck in years.
    * @param {number} weight - The weight of the duck in kilograms.
-   * @param {string} imageUrl - The URL of the duck's image.
+   * @param {string} image - The URL of the duck's image.
    */
-  constructor(name, color, age, weight, imageUrl) {
+  constructor(name, color, age, weight, image) {
     this.name = name;
     this.color = color;
     this.age = age;
     this.weight = weight;
-    this.imageUrl = imageUrl;
+    this.image = image;
   }
 
   /**
-   * Displays all the duck's details in the console and shows the image on the webpage.
+   * Displays all the duck's details in the specified container.
+   * @param {HTMLElement} container - The container element to display the duck's details.
    */
-  show() {
-    console.log(`Name: ${this.name}`);
-    console.log(`Color: ${this.color}`);
-    console.log(`Age: ${this.age} years`);
-    console.log(`Weight: ${this.weight} kg`);
-    console.log(`Image: ${this.imageUrl}`);
+  show(container) {
+    container.innerHTML = ""; // Clear previous content
 
-    // Displaying the image in the browser
+    const details = document.createElement("p");
+    details.innerHTML = `
+      <strong>Name:</strong> ${this.name}<br>
+      <strong>Color:</strong> ${this.color}<br>
+      <strong>Age:</strong> ${this.age} years<br>
+      <strong>Weight:</strong> ${this.weight} kg<br>
+    `;
+
     const imgElement = document.createElement("img");
-    imgElement.src = this.imageUrl;
+    imgElement.src = this.image;
     imgElement.alt = `Image of ${this.name}`;
-    document.body.appendChild(imgElement);
+    imgElement.width = 200;
+
+    // Append the details and image to the container
+    container.appendChild(details);
+    container.appendChild(imgElement);
   }
 
   /**
-   * Prints "Quack" a number of times based on age and weight
+   * Displays "Quack" a calculated number of times in the specified container
    * and plays a quack sound 3 times.
+   * @param {HTMLElement} container - The container element to display the quacks.
    */
-  quack() {
-    const quackCount = Math.floor((this.age * this.weight) / 2);
-    for (let i = 0; i < quackCount; i++) {
-      console.log("Quack");
-    }
+  quack(container) {
+    container.innerHTML = ""; // Clear previous content
 
-    // Optional: play quack sound 3 times
-    const audio = new Audio("quack-sound.mp3");
+    const quackCount = Math.floor((this.age * this.weight) / 2);
+    const quackText = "Quack ".repeat(quackCount);
+
+    const quackParagraph = document.createElement("p");
+    quackParagraph.textContent = quackText;
+    container.appendChild(quackParagraph);
+
+    // Play the quack sound 3 times
+    const audio = new Audio("../assets/sounds/quack.mp3");
     audio.play();
-    setTimeout(() => audio.play(), 500);
-    setTimeout(() => audio.play(), 1000);
+    setTimeout(() => audio.play(), 4000);
+    setTimeout(() => audio.play(), 8000);
   }
 }
