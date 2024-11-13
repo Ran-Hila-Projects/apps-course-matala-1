@@ -8,4 +8,20 @@ body {
   /* font-family: Arial, sans-serif; */
   min-height: 100vh;
   background-color: #f0f2f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.disabled {
+  opacity: 80%;
+  pointer-events: none;
+}
+
+.btn {
+  padding: 1rem;
 }

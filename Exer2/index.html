@@ -3,14 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Duck - Exer2</title>
+    <title>Duck Quack- Exer2</title>
 
     <!-- Styles -->
-    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="../general.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <!-- Scripts -->
     <script src="Duck.js"></script>
     <script src="main.js"></script>
   </head>
-  <body></body>
+  <body>
+    <h1>Fill your Duck Info</h1>
+    <form id="duckInfoForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required />
+
+      <label for="color">Color:</label>
+      <input type="text" id="color" required />
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" required />
+
+      <label for="weight">Weight:</label>
+      <input type="number" id="weight" required />
+
+      <label for="imageUrl">A photo of Your Duck</label>
+      <input type="url" id="imageUrl" required />
+
+      <button type="submit" class="btn" id="createDuckButton">
+        Create your Duck
+      </button>
+    </form>
+
+    <!-- Buttons -->
+    <div id="actionButtons" class="hide">
+      <div id="showButton">Show</div>
+      <div id="quackButton">Quack</div>
+    </div>
+
+    <div class="output"></div>
+  </body>
 </html>
