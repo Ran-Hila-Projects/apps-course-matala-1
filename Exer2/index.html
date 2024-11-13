@@ -14,23 +14,35 @@
     <script src="main.js"></script>
   </head>
   <body>
+    <div class="navbar">
+      <a href="../Exer1/index.html">Exer1</a>
+      <a href="../Exer2/index.html">Exer2</a>
+      <a href="../Exer3/index.html">Exer3</a>
+      <a href="../Exer4/index.html">Exer4</a>
+    </div>
+
     <h1>Fill your Duck Info</h1>
     <form id="duckInfoForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required />
-
-      <label for="color">Color:</label>
-      <input type="text" id="color" required />
-
-      <label for="age">Age:</label>
-      <input type="number" id="age" required />
-
-      <label for="weight">Weight:</label>
-      <input type="number" id="weight" required />
-
-      <label for="imageUrl">A photo of Your Duck</label>
-      <input type="url" id="imageUrl" required />
-
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
+      <div>
+        <label for="color">Color:</label>
+        <input type="text" id="color" required />
+      </div>
+      <div>
+        <label for="age">Age:</label>
+        <input type="number" id="age" required />
+      </div>
+      <div>
+        <label for="weight">Weight:</label>
+        <input type="number" id="weight" required />
+      </div>
+      <div>
+        <label for="imageUrl">A photo of Your Duck</label>
+        <input type="url" id="imageUrl" required />
+      </div>
       <button type="submit" class="btn" id="createDuckButton">
         Create your Duck
       </button>
