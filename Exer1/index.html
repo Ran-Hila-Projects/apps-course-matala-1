@@ -6,18 +6,26 @@
   </head>
 
   <!-- Styles -->
-  <link rel="stylesheet" href="general.css" />
+  <link rel="stylesheet" href="../general.css" />
+  <link rel="stylesheet" href="./Styles.css" />
 
   <!-- Scripts -->
-  <script src="Counter.js"></script>
   <script src="main.js"></script>
+  <script src="Counter.js"></script>
 
   <body>
-    <!-- זה גיפיטי יצר, מוזמן למחוק ולכתוב כרצונך, רק שמתי שיהיה בסיס -->
-    <input type="number" id="counterValue" placeholder="Enter a number" />
-    <button id="startButton">Start</button>
-    <button id="incrementButton">+</button>
-    <button id="goButton">Go</button>
+    <h1>Counter Master</h1>
+    <div class="container">
+      <div class="btn" id="startButton">Start</div>
+      <div class="btn" id="incrementButton">+</div>
+      <div class="btn" id="goButton">Go</div>
+    </div>
+    <input
+      type="number"
+      id="counterInput"
+      placeholder="Enter a value"
+      value="0"
+    />
     <p id="output"></p>
   </body>
 </html>
