@@ -1,0 +1,51 @@
+h3 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input[type="number"] {
+  margin: 5px 10px 5px 0;
+  padding: 5px;
+  width: 80px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+#pointsArrayDisplay,
+#checkOutput,
+#objectCheckOutput,
+#distanceOutput {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+canvas {
+  margin-top: 20px;
+  border: 2px solid #007bff;
+  background-color: #ffffff;
+  border-radius: 4px;
+}
