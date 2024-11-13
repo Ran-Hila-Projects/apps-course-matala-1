@@ -1,13 +1,13 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const COUNTERINPUT = document.getElementById("counterInput");
+  const COUNTER_INPUT = document.getElementById("counterInput");
 
   let counter;
 
   document.getElementById("startButton").addEventListener("click", () => {
-    let inputValue = parseInt(COUNTERINPUT.value, 10);
+    let inputValue = parseInt(COUNTER_INPUT.value, 10);
     if (!isNaN(inputValue)) {
       counter = new Counter(inputValue);
-      COUNTERINPUT.value = inputValue;
+      COUNTER_INPUT.value = inputValue;
       alert(`Counter object has been created with value = ${inputValue}`);
     } else {
       alert("Please Enter Valid Input");
@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("incrementButton").addEventListener("click", () => {
     counter.increment();
-    COUNTERINPUT.value = counter.value;
+    COUNTER_INPUT.value = counter.value;
   });
 
   document.getElementById("goButton").addEventListener("click", () => {
