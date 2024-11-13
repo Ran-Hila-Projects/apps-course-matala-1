@@ -7,11 +7,11 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="../general.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
 
     <!-- Scripts -->
-    <script src="Point.js"></script>
-    <script src="main.js"></script>
+    <script src="../Classes/Point.js"></script>
+    <script src="./main.js"></script>
   </head>
   <body>
     <div class="navbar">
@@ -21,6 +21,54 @@
       <a href="../Exer4/index.html">Exer4</a>
     </div>
 
-    <div class="main"></div>
+    <div class="main">
+      <!-- Add Points -->
+      <div>
+        <h3>Add a Point</h3>
+        <label for="xValue">X:</label>
+        <input type="number" id="xValue" />
+        <label for="yValue">Y:</label>
+        <input type="number" id="yValue" />
+        <div class="btn" id="addPointBtn">Add Point</div>
+      </div>
+
+      <!-- Display Current Points Array -->
+      <div>
+        <h3>Current Points Array:</h3>
+        <div id="pointsArrayDisplay">No points added yet.</div>
+      </div>
+
+      <!-- Check Point with X, Y -->
+      <div>
+        <h3>Check if Point Exists with X,Y Parameters</h3>
+        <label for="checkX">X:</label>
+        <input type="number" id="checkX" />
+        <label for="checkY">Y:</label>
+        <input type="number" id="checkY" />
+        <div class="btn" id="checkPointBtn">Check Point</div>
+        <div id="checkOutput"></div>
+      </div>
+
+      <!-- Check Point with Object -->
+      <div>
+        <h3>Check if a Specific Point Object Exists</h3>
+        <label for="objectX">X:</label>
+        <input type="number" id="objectX" />
+        <label for="objectY">Y:</label>
+        <input type="number" id="objectY" />
+        <div class="btn" id="checkObjectBtn">Check Point Object</div>
+        <div id="objectCheckOutput"></div>
+      </div>
+
+      <!-- Plot Graph and Calculate Distance -->
+      <div class="btn" id="plotGraphBtn">Plot Graph & Calculate Distance</div>
+      <canvas
+        id="graphCanvas"
+        width="600"
+        height="400"
+        style="border: 1px solid #000; margin-top: 20px"
+      ></canvas>
+      <div id="distanceOutput"></div>
+    </div>
   </body>
 </html>
