@@ -131,7 +131,7 @@ document.addEventListener("DOMContentLoaded", () => {
       canvas.height - (padding + pointArr[0].y * scaleY)
     );
 
-    pointArr.forEach((point, index) => {
+    pointArr.forEach((point) => {
       const x = padding + point.x * scaleX;
       const y = canvas.height - (padding + point.y * scaleY);
 
