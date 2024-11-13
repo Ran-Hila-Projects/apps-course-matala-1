@@ -6,7 +6,7 @@
 
 body {
   /* font-family: Arial, sans-serif; */
-  min-height: 100vh;
+  height: 100vh;
   background-color: #f0f2f5;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,14 @@ h1 {
   width: 100%;
   position: fixed;
   top: 0;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
 .navbar a {
