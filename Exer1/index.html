@@ -12,7 +12,7 @@
 
   <!-- Scripts -->
   <script src="./main.js"></script>
-  <script src=".././Classes/Counter.js"></script>
+  <script src="../Classes/Counter.js"></script>
 
   <body>
     <div class="navbar">
@@ -23,19 +23,26 @@
     </div>
 
     <div class="main">
-      <h1>Counter Master</h1>
-      <div class="container">
-        <div class="btn" id="startButton">Start</div>
-        <div class="btn" id="incrementButton">+</div>
-        <div class="btn" id="goButton">Go</div>
-      </div>
+      <h1>Our Cool Counter</h1>
+      <h2>Enter a number to initialize the counter, and press Start</h2>
       <input
         type="number"
         id="counterInput"
         placeholder="Enter a value"
         value="0"
       />
-      <p id="output"></p>
+      <div class="btn" id="startButton">Start</div>
+
+      <div class="container-part-2 hide">
+        <h3>Press "+" to increment the number</h3>
+        <h3>Press "Go" to print all num from 0 to counter</h3>
+        <div class="flex-col">
+          <div class="flex-row-center">
+            <div class="btn" id="incrementButton">+</div>
+            <div class="btn" id="goButton">Go</div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>

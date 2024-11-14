@@ -10,7 +10,7 @@
   padding: 10px;
   border-radius: 5px;
   background: rgba(255, 255, 255, 0.8);
-  min-width: 240px;
+  min-width: 100%;
   width: fit-content;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -18,4 +18,11 @@
 
 input {
   text-align: center;
+}
+
+#startButton {
+  background-color: rgb(103, 202, 169);
+  font-size: 2rem;
+  color: rgb(29, 60, 47);
+  margin: 1rem;
 }
