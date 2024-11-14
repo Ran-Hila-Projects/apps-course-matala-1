@@ -19,7 +19,6 @@ input[type="number"] {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 10px;
-  background-color: #007bff;
   color: white;
   text-align: center;
   border-radius: 5px;
@@ -28,8 +27,8 @@ input[type="number"] {
   text-decoration: none;
 }
 
-.btn:hover {
-  background-color: #0056b3;
+h3 {
+  margin-top: 1rem;
 }
 
 #pointsArrayDisplay,
@@ -45,7 +44,29 @@ input[type="number"] {
 
 canvas {
   margin-top: 20px;
-  border: 2px solid #007bff;
+  border: 2px solid #4cb48c;
   background-color: #ffffff;
   border-radius: 4px;
+}
+
+#plotGraphBtn {
+  font-size: 1.2rem;
+  padding: 1rem 2rem;
+  background-color: #3452ea;
+  margin-top: 3rem;
+}
+
+p {
+  text-align: center;
+  color: #747474;
+  font-size: 0.8rem;
+  margin: 0.5rem;
+}
+
+.main > div {
+  margin-top: 1rem;
+}
+
+.main {
+  margin-bottom: 5rem;
 }

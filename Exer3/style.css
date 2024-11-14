@@ -27,7 +27,7 @@ input[type="text"] {
 }
 
 button {
-  background-color: #4caf50;
+  background-color: #4cb48c;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -38,7 +38,7 @@ button {
 }
 
 button:hover {
-  background-color: #45a049;
+  background-color: #68c19f;
 }
 
 #clockList {
