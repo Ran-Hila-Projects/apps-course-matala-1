@@ -23,6 +23,10 @@ input {
 #startButton {
   background-color: rgb(103, 202, 169);
   font-size: 2rem;
-  color: rgb(29, 60, 47);
+  color: #006d3f;
   margin: 1rem;
+}
+
+.container-part-2 {
+  margin-top: 1rem;
 }

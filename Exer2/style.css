@@ -1,69 +1,107 @@
+/* General form styling */
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+form div {
+  margin-bottom: 10px;
 }
 
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Button styling */
 .btn-opt {
-  background-color: #4caf50; /* Green color */
-  color: white;
+  background-color: #4caf50;
+  color: #fff;
   border: none;
-  padding: 12px 20px;
+  padding: 12px 24px;
   margin: 10px;
   border-radius: 8px;
-  font-size: 16px;
+  font-size: 17px;
+  font-weight: 500;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn-opt:hover {
   background-color: #45a049;
+  transform: translateY(-2px);
 }
 
 .btn-opt:active {
+  background-color: #3e8e41;
 }
 
+/* Main container styling */
 .main {
+  display: flex;
   justify-content: flex-start;
-  margin-top: 20rem;
+  margin-top: 10rem;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
 }
 
+/* Action buttons container */
 #actionButtons {
   display: flex;
-  align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 1.2rem;
+  margin-top: 20px;
 }
 
-/* Styling for the output container */
+/* Output container styling */
 #output {
   background-color: #ffffff;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 400px;
-  margin: 20px auto;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 450px;
+  margin: 25px auto;
   text-align: center;
-  font-family: Arial, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.5;
 }
 
-/* Styling for duck details */
+/* Text inside output */
 #output p {
   font-size: 16px;
-  margin: 10px 0;
+  margin: 12px 0;
+  color: #555;
 }
 
 #output strong {
   color: #333;
-  font-weight: bold;
+  font-weight: 600;
 }
 
-/* Styling for the image */
+/* Image styling inside output */
 #output img {
-  width: 200px;
+  width: 220px;
   height: auto;
-  border-radius: 8px;
-  margin-top: 15px;
-  border: #333 solid 1px;
+  border-radius: 10px;
+  margin-top: 18px;
+  border: 1px solid #ccc;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }

@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", () => {
       counter = new Counter(inputValue); // Create Counter with input value
       counterInput.value = inputValue; // Update input field
       document.querySelector(".container-part-2").classList.remove("hide");
+      document.querySelector("#startButton").classList.add("hide");
     } else {
       alert("Please Enter Valid Input"); // Show error for invalid input
     }
