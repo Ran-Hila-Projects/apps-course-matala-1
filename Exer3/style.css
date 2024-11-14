@@ -44,7 +44,9 @@ button:hover {
 #clockList {
   margin-top: 20px;
   width: 100%;
-  max-width: 400px;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
 }
 
 .clock-item {

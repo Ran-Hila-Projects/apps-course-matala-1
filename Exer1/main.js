@@ -5,18 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   counterInput = document.getElementById("counterInput");
 
   // Initialize the counter with the input value on 'start' button click
-  document.getElementById("startButton").addEventListener("click", () => {
-    let inputValue = parseInt(counterInput.value, 10);
-    // Checks if the value is a valid number
-    if (!isNaN(inputValue)) {
-      counter = new Counter(inputValue); // Create Counter with input value
-      counterInput.value = inputValue; // Update input field
-      document.querySelector(".container-part-2").classList.remove("hide");
-      document.querySelector("#startButton").classList.add("hide");
-    } else {
-      alert("Please Enter Valid Input"); // Show error for invalid input
-    }
-  });
+  document.getElementById("startButton").addEventListener("click", start);
 
   // Increment the counter and update the input field
   document
@@ -31,6 +20,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 /////////////////////// Functions //////////////////////////
 ////////////////////////////////////////////////////////////
+
+const start = () => {
+  let inputValue = parseInt(counterInput.value, 10);
+  // Checks if the value is a valid number
+  if (!isNaN(inputValue)) {
+    counter = new Counter(inputValue); // Create Counter with input value
+    counterInput.value = inputValue; // Update input field
+    document.querySelector(".container-part-2").classList.remove("hide");
+    document.querySelector("#startButton").classList.add("hide");
+  } else {
+    alert("Please Enter Valid Input"); // Show error for invalid input
+  }
+};
 
 // Function to increment the counter and update the input field
 const incrementCounter = () => {
